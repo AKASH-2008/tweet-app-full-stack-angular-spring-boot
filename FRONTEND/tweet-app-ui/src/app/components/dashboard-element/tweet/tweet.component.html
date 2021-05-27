@@ -1,0 +1,19 @@
+<div class ="tweet-separate tweet-pad-top">
+<mat-card class="tweet-card">
+  <div>
+  <mat-card-content >
+    <H1 >
+      {{tweet.tweet}}
+    </H1>
+  </mat-card-content>
+  <mat-label >@{{tweet.author}}</mat-label>
+  </div>
+  <mat-card-actions>
+    <button (click)="likeTweet()" mat-button>LIKE</button>
+    <button (click)="reply()" mat-button>REPLY</button>
+    <button (click)="reply()" mat-button>VIEW REPLY</button>
+  </mat-card-actions>
+</mat-card>
+
+</div>
+

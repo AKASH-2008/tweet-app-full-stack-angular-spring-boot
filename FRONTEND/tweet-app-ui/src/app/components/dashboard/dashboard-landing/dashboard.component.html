@@ -1,0 +1,35 @@
+<div class="split-view-container">
+  <div class="left">
+    <!-- Response Profile -->
+    <div>
+      <div class="center">
+        <!-- SIDE BAR -->
+        <app-side-nav></app-side-nav>
+      </div>
+    </div>
+
+  </div>
+  <div class="right dash-board">
+    <div class="form-ft">
+      <div class="float-right-text-pos"><h1>TWEET APPLICATION</h1></div>
+      <form class="tweet-form" (ngSubmit)="postTweet()">
+        <mat-form-field class="full-width">
+          <mat-label>Tweet....</mat-label>
+          <input name="tweetMessage" [(ngModel)]="tweetMessage" matInput #message maxlength="144"
+                 placeholder="What's on your mind....">
+          <mat-hint align="end">{{message.value.length}} / 144</mat-hint>
+        </mat-form-field>
+        <button class="right-button" mat-raised-button color="primary">Primary</button>
+      </form>
+
+      <div>
+        <div class = "top-margin-tweet" >
+          <app-tweet *ngFor="let tweet of tweetList" [tweet]="tweet" ></app-tweet>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

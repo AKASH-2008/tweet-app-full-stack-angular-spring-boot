@@ -1,0 +1,17 @@
+<div class = "user-tab">
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        @user : {{userLoad.firstName}} {{userLoad.lastName}}
+      </mat-panel-title>
+
+      <mat-panel-description>
+         {{userLoad.email}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p *ngFor="let tweet of userLoad.tweets"> {{tweet.tweet}} </p>
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+

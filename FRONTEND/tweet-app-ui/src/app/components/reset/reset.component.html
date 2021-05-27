@@ -1,0 +1,45 @@
+<div class="split-view-container">
+  <div class="left">
+    <!-- Tweet Application -->
+    <div class="logo-data">
+      <img class="logo-size" src="assets\tweet-app-logo\tweet-logo.png" alt="tweet-app-logo"/>
+    </div>
+
+  </div>
+  <div class="right">
+    <div class="form-ft">
+      <div><h1>Reset Password</h1></div>
+      <div>
+        <form [formGroup]="resetForm" (ngSubmit)="onSubmit()">
+          <!-- Reset Form -->
+
+          <mat-form-field class="full-width">
+            <mat-label>Enter Email</mat-label>
+            <input
+              [(ngModel)]="resetData.email"
+              name="email" formControlName="email"
+              required type="email" matInput/>
+          </mat-form-field>
+          <span class = "mat-error" *ngIf="email && email.invalid && (email.dirty || email.touched) ">Email is invalid</span>
+
+          <mat-form-field class="full-width">
+            <mat-label>Enter Password</mat-label>
+            <input
+              [(ngModel)]="resetData.password"
+              name="password" formControlName="password"
+              required type="password" matInput/>
+          </mat-form-field>
+
+          <div>
+            <button type="submit" mat-raised-button>Reset Password</button>
+            <button class="form-margin" type="reset" color="reset" mat-raised-button color="accent">Reset</button>
+          </div>
+{{resetData|json}}
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

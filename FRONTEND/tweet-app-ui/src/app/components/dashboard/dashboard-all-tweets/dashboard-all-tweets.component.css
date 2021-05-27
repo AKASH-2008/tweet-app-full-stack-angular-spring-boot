@@ -1,0 +1,79 @@
+.tweet-form {
+  min-width: 150px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.split-view-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  overflow-y: auto;
+}
+
+div {
+  width: 100%;
+}
+
+.top-margin{
+  padding-top: 8px;
+}
+
+.top-margin-tweet{
+  padding-top: 40px;
+}
+
+.right-button{
+  float: right;
+}
+
+.center{
+  text-align: center;
+}
+.float-right-text-pos{
+  text-align: left;
+  padding-left: 12px;
+  position: relative;
+}
+
+.left {
+  background: #006496;
+  width: 25%;
+}
+
+.right {
+  background: lightgray;
+  overflow-y: scroll
+}
+
+.dash-board::-webkit-scrollbar {
+  display: none;
+}
+
+.img-user-profile{
+  width: 140px;
+  height: 160px;
+}
+
+
+.text-user{
+  color: white;
+  font-weight: bold;
+}
+
+.form-ft{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.form-margin{
+  margin-left: 25px;
+}

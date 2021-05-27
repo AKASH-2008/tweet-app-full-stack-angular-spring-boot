@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Barlow-ExtraLight
+font link: https://fonts.google.com/specimen/Barlow
+font author: Jeremy Tribby
+font author site: https://tribby.com/
+Slogan Font: Questrial-Regular.otf
+
+icon designer: Ho Ching
+icon designer link: /ho.ching.5074
+        
+{"bg":"#004A66","icon":"#0EA7FF","font":"#ffffff","slogan":"#ffffff"}
+      

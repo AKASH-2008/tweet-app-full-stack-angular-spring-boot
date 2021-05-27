@@ -1,0 +1,12 @@
+<div class>
+  <mat-toolbar color="info">
+    <h1><a class = "nav-bar" mat-icon-button routerLink="/">Tweet Application</a></h1>
+    <span class="example-spacer"></span>
+    <a *ngIf="!loggedIn" class = "nav-bar" mat-icon-button routerLink="/register">Registration</a>
+    <a *ngIf="!loggedIn" class = "nav-bar" mat-icon-button routerLink="/login">Login</a>
+    <a *ngIf="loggedIn" class = "nav-bar" mat-icon-button routerLink="dashboard">Home</a>
+    <a *ngIf="loggedIn" class = "nav-bar" mat-icon-button routerLink="dashboard/tweets">Tweets</a>
+    <a *ngIf="loggedIn" class = "nav-bar" mat-icon-button routerLink="/dashboard/users">All Users</a>
+    <a *ngIf="loggedIn" (click)="logoutUser()" class = "nav-bar" mat-icon-button >Logout</a>
+  </mat-toolbar>
+</div>

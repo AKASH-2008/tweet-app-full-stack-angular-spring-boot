@@ -1,0 +1,23 @@
+.tweet-card {
+  max-width: 1000px;
+  min-width: 300px;
+  background: whitesmoke;
+  text-align: initial;
+}
+.tweet-pad-top{
+  padding-top: 6px;
+}
+.tweet-separate{
+  overflow-y: auto;
+  text-align: center;
+}
+
+.left-tw{
+  text-align: end;
+}
+
+.left-tw{
+  text-align: initial;
+  margin-right: 20%;
+}
+

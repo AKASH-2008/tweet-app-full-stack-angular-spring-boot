@@ -1,0 +1,47 @@
+<div class="split-view-container">
+  <div class="left">
+    <!-- Tweet Application -->
+    <div class="logo-data">
+      <img class="logo-size" src="assets\tweet-app-logo\tweet-logo.png" alt="tweet-app-logo"/>
+    </div>
+
+  </div>
+  <div class="right">
+    <div class="form-ft">
+      <div><h1>Login Here</h1></div>
+        <div>
+          <form (ngSubmit)="onSubmit()">
+
+            <mat-form-field class="full-width" >
+              <mat-label>Username</mat-label>
+              <input
+                [(ngModel)]="credentials.username"
+                name="username"
+                required type = "text" matInput />
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+              <mat-label>Password</mat-label>
+              <input
+                [(ngModel)]="credentials.password"
+                name="password"
+                required type = "password" matInput />
+            </mat-form-field>
+
+            <div>
+              <button type="submit" mat-raised-button>Login</button>
+              <button class ="form-margin" type="reset" color ="reset" mat-raised-button color = "accent">Reset</button>
+            </div>
+
+          </form>
+          <div class="reset-btn">
+          <button mat-stroked-button color="accent" routerLink="/reset">Reset Password</button>
+          </div>
+        </div>
+
+
+
+    </div>
+
+  </div>
+</div>

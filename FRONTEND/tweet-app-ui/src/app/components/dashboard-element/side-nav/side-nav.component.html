@@ -1,0 +1,13 @@
+<p class="float-right-text-pos top-margin">Logged In as:
+  <span class="text-user">{{user?.user?.userId}}</span>
+</p>
+<p><img
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2wZr1SEtDxyZ15Ib_LwG-8d0FtM4DCcUMzg&amp;usqp=CAU"
+  alt="BlobImage" class="img-user-profile"/></p>
+<p class="float-right-text-pos">Name:
+  <span class="text-user">{{user?.user?.firstName}}</span></p>
+<p class="float-right-text-pos">Email:
+  <span class="text-user">{{user?.user?.email}}</span></p>
+<p class="center">
+  <button mat-raised-button color="warn" routerLink="/reset">Reset Password</button>
+</p>

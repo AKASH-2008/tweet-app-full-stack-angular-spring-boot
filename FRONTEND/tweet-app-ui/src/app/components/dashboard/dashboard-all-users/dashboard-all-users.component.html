@@ -1,0 +1,22 @@
+<div class="split-view-container">
+  <div class="left">
+    <!-- Response Profile -->
+    <div>
+      <div class="center">
+        <!-- SIDE BAR -->
+        <app-side-nav></app-side-nav>
+      </div>
+    </div>
+
+  </div>
+  <div class="right dash-board">
+    <div class="form-ft">
+      <div class="float-right-text-pos"><h1>All Users</h1></div>
+      <div class="top-margin-tweet">
+        <app-user *ngFor="let user of userList" [userLoad]="user"></app-user>
+      </div>
+    </div>
+
+
+  </div>
+</div>
